@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="firstName">
+        <item >Early Bird</item>
+        <item >Active</item>
+        <item >Salty</item>
+    </array>
+
+
+    <array name="secondName">
+        <item >Night Owl</item>
+        <item >Unwind</item>
+        <item >Sweet</item>
+    </array>
+
+
+    <array name="firstImage">
+        <item >@drawable/signup_earlybird</item>
+        <item >@drawable/signup_active</item>
+        <item >@drawable/signup_salty</item>
+    </array>
+
+
+    <array name="secondImage">
+        <item >@drawable/signup_nightowl</item>
+        <item >@drawable/signup_unwind</item>
+        <item >@drawable/signup_sweet</item>
+    </array>
+
+
+</resources>

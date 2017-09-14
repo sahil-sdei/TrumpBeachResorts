@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="data"
+            type="sdei.trumpbeach.resort.features.home.HomeModel"/>
+        <variable
+            name="presenter"
+            type="sdei.trumpbeach.resort.features.home.HomePresenter"/>
+    </data>
+
+
+
+
+<sdei.trumpbeach.resort.utils.widgets.SquareFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:onClick="@{() -> presenter.onItemClicked(data)}"
+    android:layout_margin="@dimen/margin10dp"
+    android:padding="1dp"
+    android:background="@drawable/box_with_border"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@{data.image}"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <TextView
+        android:text="@{data.title}"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content" />
+
+</sdei.trumpbeach.resort.utils.widgets.SquareFrameLayout>
+</layout>

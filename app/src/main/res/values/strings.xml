@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Trump Beach Resort</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="unable_to_sign_in">Unable to Sign in ?</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="next">Next</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="registered_email">Registered Email</string>
+    <string name="send">Send</string>
+    <string name="continue_">Continue</string>
+    <string name="thanks_for_signing_up">Thanks for signing up</string>
+    <string name="home">Home</string>
+    <string name="loyalty_program">Loyalty Program</string>
+    <string name="hows_your_stay">How\'s your stay?</string>
+</resources>

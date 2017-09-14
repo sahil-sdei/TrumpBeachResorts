@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@color/toolbar_color"
+    android:minHeight="?attr/actionBarSize">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_welcome"
+                style="@style/textWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Welcome" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                style="@style/textWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin3dp"
+                android:layout_toRightOf="@+id/tv_welcome"
+                android:text="John!" />
+
+            <TextView
+                android:id="@+id/tv_temperature"
+                style="@style/textWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin15dp"
+                android:layout_toLeftOf="@+id/rl_lang"
+                android:text="73F" />
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin15dp"
+                android:padding="@dimen/margin10dp"
+                android:src="@drawable/more" />
+
+            <LinearLayout
+                android:id="@+id/rl_lang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin5dp"
+                android:layout_toLeftOf="@+id/iv_more"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin4dp"
+                    android:src="@drawable/us_flag" />
+
+                <ImageView
+                    android:id="@+id/iv_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/language_down" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin5dp">
+
+            <TextView
+                android:id="@+id/tv_suite"
+                style="@style/textBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suite" />
+
+            <TextView
+                android:id="@+id/tv_suite_number"
+                style="@style/textBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin3dp"
+                android:layout_toRightOf="@+id/tv_suite"
+                android:text="#203" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <data>
+
+        <variable
+            name="data"
+            type="sdei.trumpbeach.resort.features.loginSignup.signup.RegistrationPresenter" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash_background">
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context="sdei.trumpbeach.resort.features.loginSignup.signup.RegistrationActivity">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar_registeration" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/margin40dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <EditText
+                    style="@style/edtextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin40dp"
+                    android:layout_marginRight="@dimen/margin40dp"
+                    android:background="@drawable/white_box"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLines="1"
+                    android:text="@={data.userName}" />
+
+
+                <android.support.v4.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin10dp" />
+
+                <EditText
+                    style="@style/edtextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin40dp"
+                    android:layout_marginRight="@dimen/margin40dp"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:text="@={data.email}" />
+
+                <android.support.v4.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin10dp" />
+
+                <EditText
+                    style="@style/edtextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin40dp"
+                    android:layout_marginRight="@dimen/margin40dp"
+                    android:hint="@string/phone_number"
+                    android:inputType="textPhonetic"
+                    android:maxLines="1"
+                    android:text="@={data.phoneNumber}" />
+
+
+                <android.support.v4.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin10dp" />
+
+                <EditText
+                    style="@style/edtextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin40dp"
+                    android:layout_marginRight="@dimen/margin40dp"
+                    android:hint="Birthday (dd/mm)"
+                    android:inputType="date" />
+
+
+                <android.support.v4.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin10dp" />
+
+                <TextView
+                    style="@style/edtextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin40dp"
+                    android:layout_marginRight="@dimen/margin40dp"
+                    android:drawableRight="@drawable/ic_down_arrow"
+                    android:hint="City" />
+
+
+                <android.support.v4.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin10dp" />
+
+                <TextView
+                    style="@style/edtextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin40dp"
+                    android:layout_marginRight="@dimen/margin40dp"
+                    android:drawableRight="@drawable/ic_down_arrow"
+                    android:hint="Country" />
+
+
+                <android.support.v4.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin10dp" />
+
+                <EditText
+                    style="@style/edtextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin40dp"
+                    android:layout_marginRight="@dimen/margin40dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:text="@={data.password}" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnRegister"
+                style="@style/btnAccentTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin40dp"
+                android:layout_marginRight="@dimen/margin40dp"
+                android:layout_marginTop="@dimen/margin40dp"
+                android:onClick="@{data::registerClicked}"
+                android:text="@string/next" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin40dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</layout>
